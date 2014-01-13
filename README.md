@@ -8,23 +8,28 @@ main.js:
 ```js
 var db = require('./db');
 var config = require('./config');
-var api = require('./api')({db: db, config: config});
+var api = require('./api')({
+    db: db,
+    config: config
+});
 ```
 
 api.js:
 
 ```js
 module.exports = function(imports) {
-    // do something with imports.db, imports.config
-    // ...
-}
+    return function() {
+        // do something with imports.db, imports.config
+        // ...
+    };
+};
 ```
 
 ## Module Injection
 
 `annoinject` provides a set of utilities that build upon this idea and make sure all imports needed actually have been injected. In `inject`'s case we would write the following:
 
-api.js
+api.js:
 
 ```js
 module.exports = require('annoinject')(['db', 'config'], function(imports) {
