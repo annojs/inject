@@ -1,0 +1,29 @@
+{
+  "name": "annoinject",
+  "description": "Injects dependencies to JavaScript modules and packages",
+  "author": "Juho Vepsalainen <bebraw@gmail.com>",
+  "version": "0.1.0",
+  "dependencies": {
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:annojs/inject.git"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "homepage": "https://github.com/annojs/inject",
+  "bugs": {
+    "url": "https://github.com/annojs/inject/issues"
+  },
+  "keywords": [
+    "di"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/annojs/inject/blob/master/LICENSE"
+    }
+  ]
+}
