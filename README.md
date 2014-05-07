@@ -49,7 +49,9 @@ api/main.js:
 var config = {
     apikey: 'foobar'
 };
-var api = require('./api')(config);
+var api = require('./api')({
+    config: config
+});
 
 // then we can do
 api.countries();
