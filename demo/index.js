@@ -8,7 +8,8 @@ var demo = require('./demo')({
     db: db
 });
 var api = require('./api')({
-    config: config
+    config: config,
+    items: ['foo', 'bar', 'baz']
 });
 
 
