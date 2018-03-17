@@ -2,7 +2,7 @@
   "name": "annoinject",
   "description": "Injects dependencies to JavaScript modules and packages",
   "author": "Juho Vepsalainen <bebraw@gmail.com>",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "dependencies": {
     "require-dir": "~1.0.0",
     "annotate": "~0.9.0",
